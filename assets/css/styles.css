@@ -130,6 +130,8 @@ img {
   color: var(--title-color);
   text-align: center;
   margin-bottom: var(--mb-3);
+  margin-top: var(--mb-3);
+
 }
 
 /*========== LAYOUT ==========*/
@@ -278,8 +280,7 @@ img {
 
 /*========== HOME ==========*/
 
-.home__container .share__container,
-.send__container {
+.home__container .aboutus__container {
   row-gap: .5rem;
   max-width: 1080px;
 }
@@ -326,26 +327,26 @@ img {
   color: var(--first-color-alt);
 }
 
-/*========== SHARE ==========*/
-.share__data {
+/*========== aboutus ==========*/
+.aboutus__data {
   text-align: center;
 }
 
-.share__description {
+.aboutus__description {
   margin-bottom: var(--mb-2);
 }
 
-.share__img {
+.aboutus__img {
   width: 280px;
   justify-self: center;
 }
 
-/*========== DECORATION ==========*/
-.decoration__container {
+/*========== quality ==========*/
+.quality__container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.decoration__data {
+.quality__data {
   text-align: center;
   padding: 1rem 1rem 2rem;
   background-color: var(--container-color);
@@ -353,26 +354,26 @@ img {
   border-radius: 1rem;
 }
 
-.decoration__data:hover {
+.quality__data:hover {
   box-shadow: 0 3px 12px rgba(65, 11, 16, .15);
 }
 
-.decoration__img {
+.quality__img {
   width: 180px;
 }
 
-.decoration__title {
+.quality__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
 
 /*========== ACCESSORIES ==========*/
-.accessory__container {
+.blog_container {
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 2rem;
 }
 
-.accessory__content {
+.blog_content {
   position: relative;
   display: grid;
   padding: .25rem .75rem .75rem;
@@ -381,37 +382,38 @@ img {
   border-radius: 1rem;
 }
 
-.accessory__content:hover {
+.blog_content:hover {
   box-shadow: 0 3px 12px rgba(65, 11, 16, .15);
 }
 
-.accessory__img {
+.blog__img {
   width: 110px;
   justify-self: center;
   margin-bottom: .25rem;
+  margin-top: 2rem;
 }
 
-.accessory__title,
-.accessory__category {
+.blog_title,
+.blog_catagory {
   text-align: center;
 }
 
-.accessory__title {
+.blog_title {
   font-size: var(--normal-font-size);
 }
 
-.accessory__category {
+.blog_catagory {
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
   color: var(--text-color-light);
 }
 
-.accessory__preci {
+.blog__preci {
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
 
-.accessory__button {
+.blog__button {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -422,22 +424,14 @@ img {
 }
 
 /*========== Contact ==========*/
-.send {
-  background-color: var(--first-color-send);
-}
-
-
-
-.send__title {
-  color: #fff;
-}
 
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 60vh;
   margin-bottom: 2rem;
+  padding-top: 5rem;
 }
 
 .contact-info-upper-container {
@@ -492,7 +486,7 @@ img {
 
 .footer__social {
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: var(--first-color);
   margin-right: var(--mb-3);
 }
 
@@ -513,8 +507,7 @@ img {
 @media screen and (max-width: 359px) {
 
   .home__img,
-  .share__img,
-  .send__img {
+  .aboutus__img {
     width: 100%;
   }
 }
@@ -522,7 +515,7 @@ img {
 @media screen and (min-width: 576px) {
 
   .home__container,
-  .share__container,
+  .aboutus__container,
   .send__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -537,17 +530,16 @@ img {
   }
 
   .section-title-center,
-  .share__data {
+  .aboutus__data {
     text-align: initial;
   }
 
   .home__img,
-  .share__img,
-  .send__img {
+  .aboutus__img{
     width: 100%;
   }
 
-  .share__img {
+  .aboutus__img {
     order: -1;
   }
 }
@@ -588,30 +580,30 @@ img {
     padding: 7rem 2rem 0;
   }
 
-  .share__container {
+  .aboutus__container {
     padding: 0 2rem;
   }
 
-  .accessory__container {
+  .blog_container {
     grid-template-columns: repeat(3, 224px);
     justify-content: center;
   }
 
-  .accessory__content {
+  .blog_content {
     padding: .5rem 1.5rem 1.5rem;
   }
 
-  .accessory__img {
+  .blog__img {
     width: 120px;
     margin-bottom: var(--mb-1);
   }
 
-  .accessory__title,
-  .accessory__category {
+  .blog_title,
+  .blog_catagory {
     text-align: initial;
   }
 
-  .accessory__button {
+  .blog__button {
     padding: .75rem;
   }
 
@@ -633,13 +625,12 @@ img {
   }
 
   .home__img,
-  .share__img,
-  .send__img {
+  .aboutus__img{
     width: 469px;
   }
 
   .home__container,
-  .share__container,
+  .aboutus__container,
   .send__container {
     column-gap: 5rem;
   }
